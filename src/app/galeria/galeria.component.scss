@@ -1,0 +1,6 @@
+.galeria{
+  display: grid;
+  margin-inline: auto;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: 2rem;
+}

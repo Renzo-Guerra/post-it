@@ -1,0 +1,8 @@
+<div>
+  <div class="contenedor" *ngIf="this.postsLikeados.length == 0;else mostrarPublicaciones">
+    <p>No hay elementos</p>
+  </div>
+  <ng-template #mostrarPublicaciones>
+    <app-publicacion [dataEntrante]="publicacion" *ngFor="let publicacion of this.postsLikeados"></app-publicacion>
+  </ng-template>
+</div>

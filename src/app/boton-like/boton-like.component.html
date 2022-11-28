@@ -1,0 +1,6 @@
+<button (click)="likear()">
+  <i *ngIf="this.clickeado;else iconoElse" [ngClass]="{'liked': this.clickeado}" class="fa-solid fa-heart"></i>
+  <ng-template #iconoElse>
+    <i class="fa-regular fa-heart"></i>
+  </ng-template>
+</button>
