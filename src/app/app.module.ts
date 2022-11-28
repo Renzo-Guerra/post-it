@@ -9,6 +9,7 @@ import { GaleriaComponent } from './galeria/galeria.component';
 import { PublicacionComponent } from './publicacion/publicacion.component';
 import { LikedPostsComponent } from './liked-posts/liked-posts.component';
 import { BotonLikeComponent } from './boton-like/boton-like.component';
+import { GaleriaLikeadosComponent } from './galeria-likeados/galeria-likeados.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { BotonLikeComponent } from './boton-like/boton-like.component';
     PublicacionComponent,
     LikedPostsComponent,
     BotonLikeComponent,
+    GaleriaLikeadosComponent,
   ],
   imports: [
     BrowserModule,

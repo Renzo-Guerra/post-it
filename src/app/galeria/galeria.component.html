@@ -1,3 +1,8 @@
 <div class="galeria">
-  <app-publicacion [dataEntrante]="publicacion" *ngFor="let publicacion of publicaciones"></app-publicacion>
+  <div *ngIf="this.publicaciones.length == 0;else mostrarPublicaciones">
+    <p>No hay elementos</p>
+  </div>
+  <ng-template #mostrarPublicaciones>
+    <app-publicacion [dataEntrante]="publicacion" *ngFor="let publicacion of publicaciones"></app-publicacion>    
+  </ng-template>
 </div>

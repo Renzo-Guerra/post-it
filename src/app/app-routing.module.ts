@@ -4,9 +4,9 @@ import { HomeComponent } from './home/home.component';
 import { LikedPostsComponent } from './liked-posts/liked-posts.component';
 
 const routes: Routes = [
-  {path: '', redirectTo: 'home', pathMatch: 'full'},
-  {path: 'home', component: HomeComponent},
-  {path: 'liked', component: LikedPostsComponent},
+  {path: '', redirectTo: 'inicio', pathMatch: 'full'},
+  {path: 'inicio', component: HomeComponent},
+  {path: 'interacciones', component: LikedPostsComponent},
 ];
 
 @NgModule({

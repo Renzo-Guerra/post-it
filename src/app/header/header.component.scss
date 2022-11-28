@@ -4,12 +4,3 @@ a.navbar-brand{
   display: flex;
   gap: .5rem;
 }
-nav{
-  background-color: red;
-}
-.nav-link{
-  color: green;
-}
-.nav-link.active{
-  color: var(--primary);
-}

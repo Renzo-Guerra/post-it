@@ -1,6 +1,4 @@
-import { PostsService } from './../posts.service';
 import { Component, OnInit } from '@angular/core';
-import { Publicacion } from '../interfaces/publicacion.interface';
 
 @Component({
   selector: 'app-liked-posts',
@@ -8,20 +6,11 @@ import { Publicacion } from '../interfaces/publicacion.interface';
   styleUrls: ['./liked-posts.component.scss']
 })
 export class LikedPostsComponent implements OnInit {
-  postsLikeados: Publicacion[] = [];
 
-  constructor(private service: PostsService) {
-    console.log("Entre");
+  constructor() {
   }
 
   ngOnInit(): void {
-    this.service.publicaciones.subscribe(posts => {
-      posts.forEach(post => {
-        if(post.clickeado){
-          this.postsLikeados.push(post);
-        }
-      });
-    });
+  
   }
-
 }
