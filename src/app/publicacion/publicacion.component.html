@@ -2,12 +2,10 @@
   <figure>
     <img src="{{dataEntrante.imagen}}">
   </figure>
-  <div class="contenedorTexto">
-    <p>Descripcion: {{dataEntrante.descripcion}}</p>
-    <p>Autor: {{dataEntrante.autor}}</p>
-    <div class="contenedorLikes">
-      <p>Likes: {{dataEntrante.likes}}</p>
-      <app-boton-like [publicacion]="dataEntrante" [(clickeado)]="dataEntrante.clickeado" [(likes)]="dataEntrante.likes"></app-boton-like>
-    </div>
+  <div class="contenedorLikes">
+    <p>{{dataEntrante.descripcion}}</p>
+    <p>@{{dataEntrante.autor}}</p>
+    <app-boton-like [publicacion]="dataEntrante" [(clickeado)]="dataEntrante.clickeado" [(likes)]="dataEntrante.likes"></app-boton-like>
+    <p>{{dataEntrante.likes}}</p>
   </div>
 </div>
